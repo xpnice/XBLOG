@@ -1,0 +1,16 @@
+.tag-text {
+    margin-left: 3px;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    text-align: center;
+    color: #a8a7a7;
+}
+
+.tag-outline {
+    display: inline-block;
+    margin-right: 5px;
+    height: 0.8rem;
+    /* border-style: dashed;
+    border-width: 1px;
+    border-color: aquamarine; */
+}

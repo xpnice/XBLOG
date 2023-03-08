@@ -1,0 +1,17 @@
+.body{
+    background-color:hsla(40, 36%, 95%, 0.869);;
+}
+
+.Background {
+    background-image: url('/src/assets/sunset.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
