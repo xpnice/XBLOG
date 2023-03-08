@@ -1,0 +1,33 @@
+.blog-card {
+    display: flex;
+    max-height: 30vh;
+    height: 280px;
+    width: 880px;
+    max-width: 97vw;
+    margin: 20px auto 0;
+    background-color: rgba(249, 249, 249, 0.796);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 14px
+}
+
+.card-context {
+    padding: 10px;
+}
+
+.card-img {
+    height: 280px;
+    width: 400px;
+    max-height: 30vh;
+    max-width: 50vw;
+    object-fit: cover;
+}
+
+.card-context-title {
+    line-height: 1.6rem;
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(65, 66, 66);
+    padding: 20px 0px 10px 0px
+}
