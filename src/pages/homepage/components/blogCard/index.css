@@ -5,23 +5,21 @@
     width: 880px;
     max-width: 97vw;
     margin: 20px auto 0;
-    background-color: rgba(249, 249, 249, 0.796);
+    background-color: rgb(211, 215, 239);
     border-radius: 5px;
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
     text-align: left;
     font-size: 14px;
-
-    &:hover {
-        z-index: 2;
-        box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    &:first-child {
-        margin-top: 0;
-    }
-
 }
 
+.blog-card:hover {
+    z-index: 2;
+    box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-card:first-child {
+    margin-top: 0;
+}
 
 .card-context {
     padding: 10px;
@@ -39,6 +37,7 @@
     line-height: 1.6rem;
     display: block;
     font-size: 1.5rem;
-    color: rgb(65, 66, 66);
+    color: rgb(216, 94, 18);
+    font-weight: 400;
     padding: 20px 0px 10px 0px
 }

@@ -1,12 +1,5 @@
-.body{
-    background-color:hsla(40, 36%, 95%, 0.869);;
-}
-
-.Background {
-    background-image: url('/src/assets/sunset.JPG');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+.title-background {
+    background-color: transparent;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,4 +7,24 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.title-background-blur {
+    background-color: hsla(40, 36%, 95%, 0.869);
+    background-image: url('/src/assets/sunset.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content-background {
+    background-color: hsla(40, 36%, 95%, 0.869);
+
 }
