@@ -1,5 +1,5 @@
 import { BlogCardProps, BlogCardInfo } from "@/typings/commom"
-import './index.css'
+import './index.less'
 import mock from './mock.json'
 import Tag, { TagSpacer } from '@/components/tag'
 const mockProps: BlogCardInfo = JSON.parse(JSON.stringify(mock))

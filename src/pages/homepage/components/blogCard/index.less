@@ -10,16 +10,17 @@
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
     text-align: left;
     font-size: 14px;
+
+    &:hover {
+        z-index: 2;
+        box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
-.blog-card:hover {
-    z-index: 2;
-    box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.2);
-}
-
-.blog-card:first-child {
-    margin-top: 0;
-}
 
 .card-context {
     padding: 10px;
