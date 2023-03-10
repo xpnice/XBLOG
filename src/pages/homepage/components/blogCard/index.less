@@ -3,13 +3,13 @@
     max-height: 30vh;
     height: 280px;
     width: 880px;
-    max-width: 97vw;
-    margin: 20px auto 0;
-    background-color: rgb(211, 215, 239);
+    max-width: 90vw;
+    margin: 40px auto 0;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.2);
     text-align: left;
-    font-size: 14px;
+    font-size: 1vh;
 
     &:hover {
         z-index: 2;
@@ -19,26 +19,38 @@
     &:first-child {
         margin-top: 0;
     }
-}
+
+    .card-context {
+        padding: 10px;
+
+        .card-context-title {
+            line-height: 3vh;
+            display: block;
+            font-size: 2.5vh;
+            color: #F68657;
+            font-weight: 500;
+            padding: 20px 0px 10px 0px
+        }
+
+        .card-notes {
+            margin-top: 6px;
+
+        }
+
+        .card-content {
+            font-size: 1vh;
+            margin-top: 6px;
+            color: #383A3F;
+        }
+    }
+
+    .card-img {
+        height: 280px;
+        width: 400px;
+        max-height: 30vh;
+        max-width: 50vw;
+        object-fit: cover;
+    }
 
 
-.card-context {
-    padding: 10px;
-}
-
-.card-img {
-    height: 280px;
-    width: 400px;
-    max-height: 30vh;
-    max-width: 50vw;
-    object-fit: cover;
-}
-
-.card-context-title {
-    line-height: 1.6rem;
-    display: block;
-    font-size: 1.5rem;
-    color: rgb(216, 94, 18);
-    font-weight: 400;
-    padding: 20px 0px 10px 0px
 }

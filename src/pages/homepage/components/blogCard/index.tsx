@@ -1,7 +1,7 @@
 import { BlogCardProps, BlogCardInfo } from "@/typings/commom"
 import './index.less'
 import mock from './mock.json'
-import Tag, { TagSpacer } from '@/components/tag'
+import Tag, { TagSpacer } from '@/components/Tag'
 const mockProps: BlogCardInfo = JSON.parse(JSON.stringify(mock))
 const BlogCard: React.FunctionComponent<BlogCardProps | null> = (props) => {
     let BlogInfo = props?.info || mockProps
@@ -19,7 +19,7 @@ const BlogCard: React.FunctionComponent<BlogCardProps | null> = (props) => {
                     <TagSpacer />
                     <Tag icon="tag">{tags[0]}</Tag>
                 </div>
-                <span>{synopsis}</span>
+                <div className="card-content">{synopsis}</div>
             </div>
 
         </div>

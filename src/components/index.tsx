@@ -1,3 +1,3 @@
-import Tag, { TagSpacer } from './tag'
+import Tag, { TagSpacer } from './Tag'
 
 export { Tag, TagSpacer }

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import './index.css';
 import Typed from 'typed.js';
-import Scroller from './components/scroller';
+import Scroller from './components/Scroller';
 import BlogList from './components/BlogList';
 
 const TYPE_SPEED = 100 // 座右铭打印速度
@@ -44,6 +44,7 @@ const HomePage: React.FunctionComponent = () => {
   return (
     <Fragment>
       <div className="title-background-blur" style={{ 'opacity': backgroundOpacity }} />
+      <div className="title-background-pure" />
       <div className="title-background">
         <h2>XpniceLi 的个人博客</h2>
         <div className="type-wrap">
