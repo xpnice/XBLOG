@@ -3,6 +3,8 @@ import './index.css';
 import Typed from 'typed.js';
 import Scroller from './components/Scroller';
 import BlogList from './components/BlogList';
+import Header from '@/components/Header';
+
 const TYPE_SPEED = 100 // 座右铭打印速度
 const START_DELAY = 500 // 座右铭开始延迟
 const HomePage: React.FunctionComponent = () => {
@@ -16,7 +18,7 @@ const HomePage: React.FunctionComponent = () => {
   }
   function handleScroll(e: any) {
     let scrollTop = document.documentElement.scrollTop
-    setBackgroundOpacity(Math.pow(1 - scrollTop / window.innerHeight, 2.5))
+    setBackgroundOpacity(Math.pow(1 - scrollTop / window.innerHeight, 2))
   }
   useEffect(() => {
     // 座右铭打字动画初始化
@@ -39,6 +41,7 @@ const HomePage: React.FunctionComponent = () => {
   }, [])
   return (
     <Fragment>
+      <Header></Header>
       <div className="title-background-blur" style={{ 'opacity': backgroundOpacity }} />
       <div className="title-background-pure" />
       <div className="title-background">
