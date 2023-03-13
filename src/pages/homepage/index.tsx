@@ -16,12 +16,8 @@ const HomePage: React.FunctionComponent = () => {
   function onClickArrow() {
     console.log('跳转到博客页面')
   }
-  function handleScroll(e: any) {
-    let scrollTop = document.documentElement.scrollTop
-    setBackgroundOpacity(Math.pow(1 - scrollTop / window.innerHeight, 2))
-  }
+  // 座右铭打字逻辑
   useEffect(() => {
-    // 座右铭打字动画初始化
     const options = {
       strings: [
         '持续成长，延迟满足'
@@ -29,13 +25,21 @@ const HomePage: React.FunctionComponent = () => {
       typeSpeed: TYPE_SPEED,
       startDelay: START_DELAY,
     };
-    // 修改引用为span标签
     typed.current = new Typed(el.current, options);
-    window.addEventListener('scroll', handleScroll)
-
     return () => {
-      // 防止内存泄漏
       typed.current.destroy();
+    }
+  }, [])
+  // 根据滚动高度调整背景透明度
+  useEffect(() => {
+    function handleScroll(e: any) {
+      let scrollTop = document.documentElement.scrollTop
+      if (window.innerHeight < scrollTop) return
+      setBackgroundOpacity(Math.pow(1 - scrollTop / window.innerHeight, 2))
+    }
+    // 监听滚动时间调整背景透明度
+    window.addEventListener('scroll', handleScroll)
+    return () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
