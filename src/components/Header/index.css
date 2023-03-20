@@ -1,17 +1,18 @@
 .header-bar {
-    background: #F6B352;
+    background: rgba(31, 33, 36, 0.7);
     position: fixed;
     height: 6vh;
     width: 100%;
-
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 10;
 }
 
 .menu-wrapper {
     float: right;
-    margin-right: 40px;
     position: relative;
     padding: 14px 25px;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -22,13 +23,13 @@
     list-style-type: none;
 } */
 
-.menu-item li{
-    margin-left: 30px;
+.menu-item li {
+    margin-left: 4vw;
     display: inline;
 }
 
 
-.menu-item a{
+.menu-item a {
     color: #fff;
     font-size: 2vh;
     font-weight: 600;
