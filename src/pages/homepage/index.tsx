@@ -14,7 +14,6 @@ const HomePage: React.FunctionComponent = () => {
   const [backgroundOpacity, setBackgroundOpacity] = useState(1)
   // 点击博客跳转按钮回调
   function onClickArrow() {
-    console.log('跳转到博客页面')
     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
   }
   // 座右铭打字逻辑

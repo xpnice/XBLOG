@@ -11,5 +11,15 @@ export interface BlogCardProps {
 }
 export interface TagProps {
     type: string;
-    
+
+}
+export enum TimeStampType {
+    Education,
+    Occupation,
+    SelfDevloper
+}
+export interface TimeStamp {
+    startDate: Date
+    type: TimeStampType
+    title: string
 }
